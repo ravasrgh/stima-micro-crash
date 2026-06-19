@@ -1,0 +1,209 @@
+{
+  "data_summary": {
+    "n_datapoints": 10080,
+    "period_start": "2023-08-10 00:00:00",
+    "period_end": "2023-08-16 23:59:00",
+    "n_crash_events": 8,
+    "n_crash_labeled_minutes": 61,
+    "obi_range": [
+      -0.7515944824223217,
+      0.4425882312672452
+    ]
+  },
+  "best_config": {
+    "config": "w=10, a=4",
+    "precision": 0.38095238095238093,
+    "recall": 1.0,
+    "f1_score": 0.5517241379310345,
+    "avg_detection_lag": 11.5
+  },
+  "parameter_comparison": [
+    {
+      "config": "w=3, a=3",
+      "precision": 0.041,
+      "recall": 1.0,
+      "f1_score": 0.079,
+      "n_alerts": 199,
+      "tp": 8,
+      "fp": 186,
+      "fn": 0
+    },
+    {
+      "config": "w=3, a=4",
+      "precision": 0.1,
+      "recall": 1.0,
+      "f1_score": 0.182,
+      "n_alerts": 82,
+      "tp": 8,
+      "fp": 72,
+      "fn": 0
+    },
+    {
+      "config": "w=5, a=3",
+      "precision": 0.065,
+      "recall": 1.0,
+      "f1_score": 0.121,
+      "n_alerts": 131,
+      "tp": 8,
+      "fp": 116,
+      "fn": 0
+    },
+    {
+      "config": "w=5, a=4",
+      "precision": 0.195,
+      "recall": 1.0,
+      "f1_score": 0.327,
+      "n_alerts": 41,
+      "tp": 8,
+      "fp": 33,
+      "fn": 0
+    },
+    {
+      "config": "w=5, a=5",
+      "precision": 0.333,
+      "recall": 0.875,
+      "f1_score": 0.483,
+      "n_alerts": 21,
+      "tp": 7,
+      "fp": 14,
+      "fn": 1
+    },
+    {
+      "config": "w=10, a=4",
+      "precision": 0.381,
+      "recall": 1.0,
+      "f1_score": 0.552,
+      "n_alerts": 21,
+      "tp": 8,
+      "fp": 13,
+      "fn": 0
+    }
+  ],
+  "baseline_comparison": [
+    {
+      "method": "Threshold OBI \u2264 -0.3",
+      "precision": 0.133,
+      "recall": 0.25,
+      "f1_score": 0.174,
+      "n_alerts": 15,
+      "tp": 2,
+      "fp": 13,
+      "fn": 6
+    },
+    {
+      "method": "Threshold OBI \u2264 -0.4",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "n_alerts": 12,
+      "tp": 0,
+      "fp": 12,
+      "fn": 8
+    },
+    {
+      "method": "Threshold OBI \u2264 -0.5",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "n_alerts": 9,
+      "tp": 0,
+      "fp": 9,
+      "fn": 8
+    },
+    {
+      "method": "Threshold OBI \u2264 -0.6",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "n_alerts": 8,
+      "tp": 0,
+      "fp": 8,
+      "fn": 8
+    },
+    {
+      "method": "Threshold OBI \u2264 -0.7",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0,
+      "n_alerts": 4,
+      "tp": 0,
+      "fp": 4,
+      "fn": 8
+    }
+  ],
+  "speed_benchmark": [
+    {
+      "text_length": 1000,
+      "kmp_time_ms": 0.15322900000001027,
+      "bf_time_ms": 0.17631479999806743,
+      "kmp_comparisons": 1000,
+      "bf_comparisons": 1344,
+      "speedup": 1.150662080924992
+    },
+    {
+      "text_length": 5000,
+      "kmp_time_ms": 0.7272720000031541,
+      "bf_time_ms": 0.9510101999978815,
+      "kmp_comparisons": 5000,
+      "bf_comparisons": 6685,
+      "speedup": 1.3076403326317485
+    },
+    {
+      "text_length": 10000,
+      "kmp_time_ms": 1.4768171999975266,
+      "bf_time_ms": 1.8818509999988464,
+      "kmp_comparisons": 10000,
+      "bf_comparisons": 13387,
+      "speedup": 1.2742612965247142
+    },
+    {
+      "text_length": 50000,
+      "kmp_time_ms": 7.527671200003283,
+      "bf_time_ms": 9.468245600001524,
+      "kmp_comparisons": 50000,
+      "bf_comparisons": 66621,
+      "speedup": 1.2577921309843336
+    },
+    {
+      "text_length": 100000,
+      "kmp_time_ms": 14.625565399998663,
+      "bf_time_ms": 18.942816199998447,
+      "kmp_comparisons": 100000,
+      "bf_comparisons": 133021,
+      "speedup": 1.295185224087144
+    },
+    {
+      "text_length": 500000,
+      "kmp_time_ms": 74.0202016000012,
+      "bf_time_ms": 95.76453539999648,
+      "kmp_comparisons": 500000,
+      "bf_comparisons": 664199,
+      "speedup": 1.2937621531686687
+    }
+  ],
+  "sax_example": {
+    "input_obi": [
+      0.0554,
+      0.0421,
+      0.0582,
+      0.0524,
+      0.0368,
+      0.0045,
+      0.0082,
+      -0.0179,
+      -0.0478,
+      -0.0175,
+      0.0053,
+      0.0246,
+      0.0316,
+      0.0515,
+      0.0944,
+      0.0147,
+      -0.0096,
+      -0.0094,
+      -0.014,
+      -0.0309
+    ],
+    "sax_output_sample": "dbbbbbdbadcbcccabcccccadcbcbbbbcbdcbcacbdbbbbbcddb"
+  }
+}

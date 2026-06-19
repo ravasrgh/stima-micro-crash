@@ -1,0 +1,6 @@
+method,precision,recall,f1_score,n_alerts,tp,fp,fn
+Threshold OBI ≤ -0.3,0.133,0.25,0.174,15,2,13,6
+Threshold OBI ≤ -0.4,0.0,0.0,0.0,12,0,12,8
+Threshold OBI ≤ -0.5,0.0,0.0,0.0,9,0,9,8
+Threshold OBI ≤ -0.6,0.0,0.0,0.0,8,0,8,8
+Threshold OBI ≤ -0.7,0.0,0.0,0.0,4,0,4,8
